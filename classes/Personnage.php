@@ -15,7 +15,7 @@ class Personnage {
 
 
     // J'ajoute une propriété statique à ma classe personnage
-    protected static $numInstances;
+    protected static Int $numInstances;
 
     // Constructeur de ma classe permettant de définir des valeurs par défaut lorsqu'elle est instanciée
     public function __construct() {
@@ -31,9 +31,9 @@ class Personnage {
         // en elle même et pas à ses instances
     }
 
-    public static function getNumInstances() {
+    public static function getNumInstances(): Int {
         // Complétez le code ici
-        return
+        return self::$numInstances;
     }
 
     // Méthode permettant de déplacer le personnage vers la droite

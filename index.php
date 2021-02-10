@@ -22,6 +22,6 @@ $princesse = new Princesse();
 $sorcier = new Sorcier();
 
 
-
-
+echo Personnage::getNumInstances();
+echo Dragon::getDragonCount();
 
